@@ -1,0 +1,31 @@
+#!/bin/sh
+CHEF_BINARY=chef-solo
+#Is system already configured for chef?
+if ! command -v $CHEF_BINARY > /dev/null 2>&1; then
+  # Don't prompt during installs
+  export DEBIAN_FRONTEND=noninteractive
+
+  #install git if not present
+  if ! command -v git > /dev/null 2>&1; then
+    apt-get install -y --force-yes git
+  fi
+  
+  #chef makes use of recent ruby
+  sudo apt-get install -y ruby1.9.1-dev
+  
+  sudo apt-get update
+  sudo apt-get install -y git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev
+  # Install chef
+  apt-get install -y chef
+
+  # chef-client is not needed for single box setup
+  /etc/init.d/chef-client stop
+  update-rc.d -f chef-client remove
+
+  #librarian
+  sudo gem install librarian-chef --no-ri --no-rdoc
+
+fi 
+
+
+echo proceed with:   "$CHEF_BINARY" -c solo.rb -j "nodes/nodename.json"
