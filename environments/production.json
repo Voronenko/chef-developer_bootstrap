@@ -1,0 +1,11 @@
+{
+    "name": "production",
+    "description": "Production environment",
+    "chef_type": "environment",
+    "json_class": "Chef::Environment",
+    "default_attributes": {
+        "nginx": {
+            "default_site_enabled": false
+        }
+    }
+}

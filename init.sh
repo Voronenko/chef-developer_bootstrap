@@ -23,7 +23,10 @@ if ! command -v $CHEF_BINARY > /dev/null 2>&1; then
   update-rc.d -f chef-client remove
 
   #librarian
+  echo installing librarian gem... Please be patient, takes a while.
   sudo gem install librarian-chef --no-ri --no-rdoc
+  echo Initializing cookbooks
+  librarian-chef install
 
 fi 
 
