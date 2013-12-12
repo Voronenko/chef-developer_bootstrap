@@ -6,6 +6,12 @@
     "default_attributes": {
       "user":{
         "name": "slavko"
+      },
+      "java" : {
+        "install_flavor" : "oracle",
+        "oracle" : {
+                     "accept_oracle_download_terms" : true
+                   } 
       }
     }
 }

@@ -12,6 +12,7 @@ cookbook 'memcached'
 cookbook 'tomcat'
 cookbook 'nodejs'
 cookbook 'npm'
+cookbook 'java'
 cookbook 'devbox',
    :git => 'https://github.com/Voronenko/chef-developer_recipes'
 
