@@ -5,10 +5,7 @@
     "json_class": "Chef::Role",
     "run_list": [
         "recipe[apache2]",
-        "recipe[php]",
-        "recipe[devbox::teamviewer]",
-        "recipe[devbox::googlechrome]",
-        "recipe[devbox::phpstorm]"
+        "recipe[php]"
     ],
 
     "env_run_lists" : {

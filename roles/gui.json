@@ -1,0 +1,23 @@
+{
+    "name": "gui",
+    "description": "Workstation intended for desktop use",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "run_list": [
+        "recipe[devbox::default]",
+        "recipe[devbox::teamviewer]",
+        "recipe[devbox::googlechrome]",
+        "recipe[devbox::phpstorm]",
+        "recipe[devbox::webmin]"
+    ],
+
+    "env_run_lists" : {
+      "production" : [],      
+      "development": [],
+      "test": []
+    },
+
+    "override_attributes": {
+    }
+
+}
