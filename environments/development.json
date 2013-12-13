@@ -5,13 +5,17 @@
     "json_class": "Chef::Environment",
     "default_attributes": {
       "user":{
-        "name": "slavko"
-      },
+                "name": "slavko"
+             },
       "java" : {
-        "install_flavor" : "oracle",
-        "oracle" : {
-                     "accept_oracle_download_terms" : true
-                   } 
-      }
+                 "install_flavor" : "oracle",
+                  "oracle" : {
+                                "accept_oracle_download_terms" : true
+                             } 
+               },
+     "apache": {
+                  "listen_ports" : ["80", "443"],
+                  "default_site_enabled": true
+               }
     }
 }

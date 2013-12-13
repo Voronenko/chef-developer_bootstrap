@@ -4,6 +4,20 @@
     "chef_type": "role",
     "json_class": "Chef::Role",
     "run_list": [
-        "recipe[devbox::teamviewer]"
-    ]
+        "recipe[apache2]",
+        "recipe[php]",
+        "recipe[devbox::teamviewer]",
+        "recipe[devbox::googlechrome]",
+        "recipe[devbox::phpstorm]"
+    ],
+
+    "env_run_lists" : {
+      "production" : [],      
+      "development": [],
+      "test": []
+    },
+
+    "override_attributes": {
+    }
+
 }
