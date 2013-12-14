@@ -16,11 +16,11 @@ if ! command -v $CHEF_BINARY > /dev/null 2>&1; then
   sudo apt-get update
   sudo apt-get install -y git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev
   # Install chef
-  apt-get install -y chef
+  sudo apt-get install -y chef
 
   # chef-client is not needed for single box setup
-  /etc/init.d/chef-client stop
-  update-rc.d -f chef-client remove
+  sudo /etc/init.d/chef-client stop
+  sudo update-rc.d -f chef-client remove
 
   #librarian
   echo installing librarian gem... Please be patient, takes a while.

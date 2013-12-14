@@ -5,14 +5,14 @@
     "json_class": "Chef::Role",
     "run_list": [
         "recipe[apache2]",
-        "recipe[php]"
+        "recipe[apache2::mod_rewrite]",
+        "recipe[apache2::mod_ssl]",
+        "recipe[php]",
+        "recipe[php::module_mysql]",
+        "recipe[php::module_apc]",
+        "recipe[php::module_curl]",
+        "recipe[apache2::mod_php5]"
     ],
-
-    "env_run_lists" : {
-      "production" : [],      
-      "development": [],
-      "test": []
-    },
 
     "override_attributes": {
     }
