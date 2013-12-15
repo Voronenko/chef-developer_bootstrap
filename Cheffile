@@ -8,6 +8,8 @@ cookbook 'apache2'
 cookbook 'database'
 cookbook 'devbox',
    :git => 'https://github.com/Voronenko/chef-developer_recipes'
+cookbook 'git'   
+cookbook 'hostsfile'
 cookbook 'java'   
 cookbook 'php'
 cookbook 'mysql'

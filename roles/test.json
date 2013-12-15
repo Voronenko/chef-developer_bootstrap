@@ -13,6 +13,7 @@
         "recipe[php::module_curl]",
         "recipe[apache2::mod_php5]",
         "recipe[devbox::mariadb_server]",        
+        "role[lamp_debug]",
         "role[sql]"
     ],
 
