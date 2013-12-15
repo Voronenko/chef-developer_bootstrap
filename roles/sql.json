@@ -1,0 +1,15 @@
+{
+    "name": "sql",
+    "description": "Set of sql tools for deeper DB mastering",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "run_list": [
+        "recipe[devbox::common_schema]",
+        "recipe[devbox::percona_toolkit]"
+    ],
+
+
+    "override_attributes": {
+    }
+
+}

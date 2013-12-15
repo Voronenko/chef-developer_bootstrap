@@ -11,11 +11,6 @@
         "recipe[devbox::webmin]"
     ],
 
-    "env_run_lists" : {
-      "production" : [],      
-      "development": [],
-      "test": []
-    },
 
     "override_attributes": {
     }

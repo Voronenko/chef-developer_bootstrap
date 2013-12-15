@@ -13,8 +13,7 @@
         "recipe[php::module_curl]",
         "recipe[apache2::mod_php5]",
         "recipe[devbox::mariadb_server]",        
-        "recipe[devbox::phpmyadmin]",
-        "recipe[devbox::commonschema]",        
+        "role[sql]"
     ],
 
     "override_attributes": {

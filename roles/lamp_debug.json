@@ -1,0 +1,16 @@
+{
+    "name": "lamp_debug",
+    "description": "Configures environment for php debugging and troubleshouting",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "run_list": [
+        "recipe[devbox::phpmyadmin]",    
+        "recipe[devbox::php_xdebug]",
+        "recipe[devbox::php_webgrinder]"
+    ],
+
+
+    "override_attributes": {
+    }
+
+}
