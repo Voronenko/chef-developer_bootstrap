@@ -4,17 +4,19 @@
 site 'http://community.opscode.com/api/v1'
 
 cookbook 'apt'
-cookbook 'php'
 cookbook 'apache2'
-cookbook 'mysql'
-cookbook 'nginx'
-cookbook 'memcached'
-cookbook 'tomcat'
-cookbook 'nodejs'
-cookbook 'npm'
-cookbook 'java'
+cookbook 'database',
 cookbook 'devbox',
    :git => 'https://github.com/Voronenko/chef-developer_recipes'
+cookbook 'java'   
+cookbook 'php'
+cookbook 'mysql'
+cookbook 'memcached'
+cookbook 'nginx'
+cookbook 'nodejs'
+cookbook 'npm'
+cookbook 'tomcat'
+
 
 # cookbook 'apache2', '>= 1.0.0'
 

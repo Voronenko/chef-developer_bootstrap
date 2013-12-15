@@ -16,6 +16,22 @@
      "apache": {
                   "listen_ports" : ["80", "443"],
                   "default_site_enabled": true
-               }
+               },
+     "mariadb": {
+                   "version":"5.5"
+                },
+     "mysql" :  {
+                   "use_upstart": false,
+                   "server_root_password": "devroot",
+                   "server_repl_password": "devrepl",
+                   "server_debian_password": "devdebian",                   
+                   "client": {
+                                "packages":["mariadb-client", "libmariadbclient-dev"]
+                             },
+                   "server": {
+                                "packages":["mariadb-server"]
+                             }          
+                }
+
     }
 }
