@@ -5,7 +5,7 @@ site 'http://community.opscode.com/api/v1'
 
 cookbook 'apt'
 cookbook 'apache2'
-cookbook 'database',
+cookbook 'database'
 cookbook 'devbox',
    :git => 'https://github.com/Voronenko/chef-developer_recipes'
 cookbook 'java'   

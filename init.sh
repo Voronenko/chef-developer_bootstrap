@@ -22,6 +22,9 @@ if ! command -v $CHEF_BINARY > /dev/null 2>&1; then
   sudo /etc/init.d/chef-client stop
   sudo update-rc.d -f chef-client remove
 
+  #berk
+  echo installing berk
+  sudo gem install berkshelf --no-ri --no-rdoc
   #librarian
   echo installing librarian gem... Please be patient, takes a while.
   sudo gem install librarian-chef --no-ri --no-rdoc
