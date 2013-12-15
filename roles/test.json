@@ -11,7 +11,9 @@
         "recipe[php::module_mysql]",
         "recipe[php::module_apc]",
         "recipe[php::module_curl]",
-        "recipe[apache2::mod_php5]"
+        "recipe[apache2::mod_php5]",
+        "recipe[devbox::mariadb_server]",        
+        "recipe[devbox::phpmyadmin]"
     ],
 
     "override_attributes": {
