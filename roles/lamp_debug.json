@@ -6,7 +6,7 @@
     "run_list": [
         "recipe[devbox::phpmyadmin]",    
         "recipe[devbox::php_xdebug]",
-        "recipe[devbox::php_webgrinder]",
+        "recipe[devbox::php_webgrind]",
         "recipe[devbox::mailcatcher]"
     ],
 
