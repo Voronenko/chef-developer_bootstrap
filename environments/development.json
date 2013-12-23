@@ -31,7 +31,14 @@
                    "server": {
                                 "packages":["mariadb-server"]
                              }          
-                }
+                }           
+
+    },
+    "override_attributes":{
+      "tomcat" : {
+                   "keystore_password": "devroot",
+                    "truststore_password": "devroot"
+                  }                 
 
     }
 }
