@@ -15,13 +15,7 @@ if ! command -v $CHEF_BINARY > /dev/null 2>&1; then
   
   sudo apt-get update
   sudo apt-get install -y git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev
-  # Install chef
-  sudo apt-get install -y chef
-
-  # chef-client is not needed for single box setup
-  sudo /etc/init.d/chef-client stop
-  sudo update-rc.d -f chef-client remove
-
+  
   #berk
   echo installing berk
   sudo gem install berkshelf --no-ri --no-rdoc

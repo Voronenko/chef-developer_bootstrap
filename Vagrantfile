@@ -53,21 +53,22 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   
   #Make sure that box we have runs recent ruby version & appropriate chef version.
-  config.vm.provision :shell, :path => "init_vagrant.sh"
+  #Use shell provisioner once if you use default box http://files.vagrantup.com/precise32.box
+  config.vm.provision :shell, :path => DEVELOPER_BOOTSTRAP_PATH+"init_vagrant.sh"
 
 # Enable provisioning with chef solo, specifying a cookbooks path, roles
   # path, and data_bags path (all relative to this Vagrantfile), and adding
   # some recipes and/or roles.
   config.vm.provision :chef_solo do |chef|
 
-     chef.cookbooks_path = ["cookbooks", "cookbooks-project"]
-     chef.roles_path = "roles"
-     chef.data_bags_path = "databags"
-     chef.environments_path="environments"
+     chef.cookbooks_path = [DEVELOPER_BOOTSTRAP_PATH+"cookbooks", DEVELOPER_BOOTSTRAP_PATH+"cookbooks-project"]
+     chef.roles_path = DEVELOPER_BOOTSTRAP_PATH+"roles"
+     chef.data_bags_path = DEVELOPER_BOOTSTRAP_PATH+"databags"
+     chef.environments_path=DEVELOPER_BOOTSTRAP_PATH+"environments"
 
      chef.environment="vagrant"
 
-     chef.add_recipe "devbox:default"
+     chef.add_recipe "devbox"
   #   chef.add_role "web"
   #
   #   # You may also specify custom JSON attributes:
