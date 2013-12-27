@@ -7,7 +7,6 @@
         "recipe[devbox::default]",
         "recipe[devbox::teamviewer]",
         "recipe[devbox::googlechrome]",
-        "recipe[devbox::phpstorm]",
         "recipe[devbox::webmin]"
     ],
 

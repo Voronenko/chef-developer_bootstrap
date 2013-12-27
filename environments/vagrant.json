@@ -1,0 +1,57 @@
+{
+    "name": "development",
+    "description": "Development environment under Vagrant",
+    "chef_type": "environment",
+    "json_class": "Chef::Environment",
+    "default_attributes": {
+      "user":{
+                "name": "vagrant"
+             },
+      "java" : {
+                 "install_flavor" : "oracle",
+                  "oracle" : {
+                                "accept_oracle_download_terms" : true
+                             } 
+               },
+     "apache": {
+                  "listen_ports" : ["80", "443"],
+                  "default_site_enabled": true
+               },
+     "mariadb": {
+                   "version":"5.5"
+                },
+     "mysql" :  {
+                   "use_upstart": false,
+                   "server_root_password": "devroot",
+                   "server_repl_password": "devrepl",
+                   "server_debian_password": "devdebian",                   
+                   "client": {
+                                "packages":["mariadb-client", "libmariadbclient-dev"]
+                             },
+                   "server": {
+                                "packages":["mariadb-server"]
+                             }          
+                },
+      "nodejs": {
+                  "install_method":"source",
+                  "version":"0.10.24",
+                  "checksum":"610cd733186842cb7f554336d6851a61b2d3d956050d62e49fa359a47640377a",
+                  "checksum_linux_x64":"6ef93f4a5b53cdd4471786dfc488ba9977cb3944285ed233f70c508b50f0cb5f",
+                  "checksum_linux_x86":"fb6487e72d953451d55e28319c446151c1812ed21919168b82ab1664088ecf46",
+                  "dir":"/usr/local",
+                  "src_url":"http://nodejs.org/dist",
+                  "legacy_packages":false
+                },
+      "npm": {
+      	        "version":"1.3.21"
+             }           
+
+    },
+    "override_attributes":{
+      "tomcat" : {
+                   "keystore_password": "devroot",
+                    "truststore_password": "devroot"
+                  }                 
+
+    }
+}

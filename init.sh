@@ -7,7 +7,7 @@ if ! command -v $CHEF_BINARY > /dev/null 2>&1; then
 
   #install git if not present
   if ! command -v git > /dev/null 2>&1; then
-    apt-get install -y --force-yes git
+    sudo apt-get install -y --force-yes git
   fi
   
   #chef makes use of recent ruby
