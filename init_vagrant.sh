@@ -24,7 +24,7 @@
 
   #berk
   echo installing berk
-  sudo gem install berkshelf --no-ri --no-rdoc
+  #sudo gem install berkshelf --no-ri --no-rdoc
   
 
   #librarian
