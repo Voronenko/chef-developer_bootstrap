@@ -26,7 +26,14 @@ By default, it will install bootstrap software packages listed below:
 
 ### Vagrant usage
 
-Install Oracle VirtualBox [http://www.virtualbox.org/], Vagrant [http://vagrantup.com/], Vagrant berkshelf plugin [vagrant plugin install vagrant-berkshelf]. 
+Install Oracle VirtualBox [http://www.virtualbox.org/], Vagrant [http://vagrantup.com/], 
+* Vagrant berkshelf plugin [vagrant plugin install vagrant-berkshelf]
+* Vagrant vbguest plugin [vagrant plugin install vagrant-vbguest]
+
+*vagrant-berkshelf* is a Vagrant plugin to add Berkshelf integration to the Chef provisioners
+
+*vagrant-vbguest* is a Vagrant plugin which automatically installs the host's VirtualBox Guest Additions on the guest system. 
+
 
 Clone developer bootstrap repository. Using *Vagrantfile* as an example choose necessary roles for your box. Use *vagrant* environment file to adjust your software settings and versions.
 
