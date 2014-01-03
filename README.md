@@ -77,6 +77,17 @@ Manual steps are:
 Vagrant steps are:
 *vagrant up*
 
+### Vagrant debugging configuration
+
+Suggested recipe requires minimum configuration to run (PHPStorm)
+
+* in project settings/server register vagrant server
+ (You can use some wildcard domain like PROJECT.lvh.me to map test domain name to vagrant box)
+* in phpstorm set XDEBUG_SESSION_START variable (PHPSTORM or whatever)
+* Put breakpoint, launch debugging session (for example using handy chrome helper [https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc] 
+
+
+
 
 ## Read more
 
