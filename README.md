@@ -93,3 +93,19 @@ Suggested recipe requires minimum configuration to run (PHPStorm)
 
 [http://docs.opscode.com/](http://docs.opscode.com/)
 [http://docs.vagrantup.com/v2/] (http://docs.vagrantup.com/v2/)
+
+
+
+#Linked projects: #
+
+Interested in using developer box Chef recipes in your own cookbooks?
+See [https://github.com/Voronenko/chef-developer_recipes](https://github.com/Voronenko/chef-developer_recipes)
+
+Interested in building your devbox on top of Vagrant + vagrant-berkshelf plugin?
+See [https://github.com/Voronenko/vagrant-wrap](https://github.com/Voronenko/vagrant-wrap)
+
+
+Note: see following article about future of the vagrant-berkshelf plugin [https://sethvargo.com/the-future-of-vagrant-berkshelf/](https://sethvargo.com/the-future-of-vagrant-berkshelf/)
+
+Interested in building your devbox on top of Vagrant + test-kitchen?
+See [https://github.com/Voronenko/lamp-kitchen](https://github.com/Voronenko/lamp-kitchen) 
