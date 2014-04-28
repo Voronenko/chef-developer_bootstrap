@@ -32,6 +32,15 @@
                                 "packages":["mariadb-server"]
                              }          
                 },
+     "mongodb": {
+                  "install_method":"10gen",
+                  "package_version":"2.4.10", 
+                  "config": {
+                     "smallfiles": true,
+                     "dbpath": "/data/db"
+                  }
+                },
+
       "nodejs": {
                   "install_method":"source",
                   "version":"0.10.24",
