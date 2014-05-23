@@ -14,7 +14,8 @@ I am also adapting 13.10 (Saucy Salamander), but it still has some incompatibili
 ## Software installed
 
 ### Standalone usage
-Once you cloned repository on a target box, run init.sh
+Once you cloned repository on a target box, run init.sh;
+Alternatively you can use so called CHEF omnibus installer - init_chefomnibus.sh
 
 By default, it will install bootstrap software packages listed below:
  
