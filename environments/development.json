@@ -34,16 +34,20 @@
                 },
       "nodejs": {
                   "install_method":"source",
-                  "version":"0.10.24",
-                  "checksum":"610cd733186842cb7f554336d6851a61b2d3d956050d62e49fa359a47640377a",
-                  "checksum_linux_x64":"6ef93f4a5b53cdd4471786dfc488ba9977cb3944285ed233f70c508b50f0cb5f",
-                  "checksum_linux_x86":"fb6487e72d953451d55e28319c446151c1812ed21919168b82ab1664088ecf46",
+                  "version":"0.10.26",
+                  "checksum":"ef5e4ea6f2689ed7f781355012b942a2347e0299da0804a58de8e6281c4b1da",
+                  "checksum_linux_x64":"305bf2983c65edea6dd2c9f3669b956251af03523d31cf0a0471504fd5920aac",
+                  "checksum_linux_x86":"8fa2d952556c8b5aa37c077e2735c972c522510facaa4df76d4244be88f4dc0f",
                   "dir":"/usr/local",
                   "src_url":"http://nodejs.org/dist",
                   "legacy_packages":false
                 },
       "npm": {
-      	        "version":"1.3.21"
+      	        "version":"1.4.3"
+             },
+      "nginx": {
+      	        "install_method":"source",
+                "version": "1.6.0"
              }           
 
     },

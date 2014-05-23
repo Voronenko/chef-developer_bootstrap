@@ -1,0 +1,19 @@
+{
+    "name": "test",
+    "description": "Web role",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "run_list": [
+        "recipe[build-essential]",
+        "recipe[nodejs]",
+        "recipe[npm]",
+        "recipe[devbox::nodejs]",
+        "recipe[mysql::client]",
+        "recipe[mysql::server]",
+        "role[sql]"
+    ],
+
+    "override_attributes": {
+    }
+
+}
