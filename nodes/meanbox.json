@@ -1,0 +1,9 @@
+{
+    "run_list": [
+        "role[nodejs_mean]",
+        "role[nodejs_debug]",
+        "recipe[nginx]"
+    ]
+}
+
+
