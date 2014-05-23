@@ -1,1 +1,1 @@
-sudo chef-solo  -c solo.rb -j "nodes/lampbox.json"
+sudo chef-solo  -c solo.rb -j "nodes/meanbox.json"

@@ -1,6 +1,6 @@
 {
     "run_list": [
-        "recipe[devbox]"    
+        "recipe[devbox]",    
         "role[lamp_complete]"
     ]
 }
