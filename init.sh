@@ -1,4 +1,7 @@
 #!/bin/sh
+
+#recommended for 12.04
+
 CHEF_BINARY=chef-solo
 #Is system already configured for chef?
 if ! command -v $CHEF_BINARY > /dev/null 2>&1; then

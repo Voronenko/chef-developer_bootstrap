@@ -1,0 +1,1 @@
+sudo chef-solo  -c solo.rb -j "nodes/lampbox.json"
