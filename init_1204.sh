@@ -8,7 +8,7 @@ sudo apt-add-repository ppa:brightbox/ruby-ng
 
 sudo apt-get update
 
-sudo apt-get install ruby2.1 rubygems ruby-switch
+sudo apt-get install ruby2.1 ruby2.1-dev rubygems ruby-switch 
 
 sudo ruby-switch --set ruby1.9.1
 
