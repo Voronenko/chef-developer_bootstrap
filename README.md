@@ -34,6 +34,7 @@ Install Oracle VirtualBox [http://www.virtualbox.org/], Vagrant [http://vagrantu
 Note: for Vagrant > 1.5.3 syntax for installing berkshelf plugin is different:
 * vagrant plugin install vagrant-berkshelf --plugin-version '>= 2.0.1'
 
+Windows: You also will need to have either tar in a path, or  patch your ruby devkit with http://gnuwin32.sourceforge.net/packages/gtar.htm
 
 *vagrant-berkshelf* is a Vagrant plugin to add Berkshelf integration to the Chef provisioners
 
