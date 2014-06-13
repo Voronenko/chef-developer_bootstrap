@@ -1,0 +1,4 @@
+cookbooks/*
+cookbooks-currentproject/*
+tmp/*
+*.lock

@@ -1,0 +1,3 @@
+[submodule "cookbooks-project/currentproject"]
+	path = cookbooks-project/currentproject
+	url = git@github.com:softasap/current_project_cookbook_stub.git
