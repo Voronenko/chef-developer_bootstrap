@@ -1,4 +1,4 @@
 cookbooks/*
 cookbooks-currentproject/*
-tmp/*
 *.lock
+tmp/*
